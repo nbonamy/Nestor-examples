@@ -1,0 +1,20 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsx ./index.ts",
+    "dev": "npx tsx --watch ./index.ts"
+  },
+  "author": "nicolas@bonamy.fr",
+  "license": "Apache-2.0",
+  "description": "Nestor client example",
+  "dependencies": {
+    "@nestor/client": "file:../../nestor/client",
+    "openai": "^4.64.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.1"
+  }
+}

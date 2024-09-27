@@ -1,0 +1,16 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "nicolas@bonamy.fr",
+  "license": "Apache-2.0",
+  "description": "Nestor service example",
+  "dependencies": {
+    "@nestor/service": "file:../../nestor/service",
+    "express": "^4.21.0",
+    "portfinder": "^1.0.32"
+  }
+}
