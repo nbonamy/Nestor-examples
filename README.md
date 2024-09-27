@@ -4,7 +4,7 @@ These are examples for Nestor, the API Hub for AI Agents. For more details about
 
 ## Demo
 
-You can watch a [demo video](./doc/demo.mkv) of Nestor example.
+You can watch a [demo video](https://youtu.be/qPjsabr4dfo) of Nestor example.
 
 ## Service 1
 
