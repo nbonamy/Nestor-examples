@@ -2,6 +2,10 @@
 
 These are examples for Nestor, the API Hub for AI Agents. For more details about Nestor, please refer to the [Nestor repository](https://github.com/nbonamy/nestor).
 
+## Demo
+
+You can watch a [demo video](./doc/demo.mkv) of Nestor example.
+
 ## Service 1
 
 Service 1 exposes two mock APIs:
@@ -31,5 +35,3 @@ The client should automatically discover the hub and ask the LLM to create a pla
   - Create a playlist with a title and description and get an ID in return
   - Get the unique ID of the three songs. Notice tha the artist is not The National for song number 2
   - Add the three songs to the playlist
-
-
