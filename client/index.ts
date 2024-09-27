@@ -1,6 +1,5 @@
 
 import { OpenAI } from 'openai'
-import readlineSync from 'readline-sync'
 import { NestorClient } from '@nestor/client'
 
 const nestorClient = new NestorClient({ logger: null })
@@ -11,7 +10,7 @@ setTimeout(async () => {
   const openai = new OpenAI()
 
   // prompt
-  const user_input = 'Create a playlist of the songs played at The National concert in Chicago on 24 September 2024'//readlineSync.question('Your input: ')
+  const user_input = 'Create a playlist of the songs played at The National concert in Chicago on 24 September 2024'
 
   // build messages
   const messages: any[] = [

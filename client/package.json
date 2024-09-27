@@ -11,8 +11,7 @@
   "description": "Nestor client example",
   "dependencies": {
     "@nestor/client": "file:../../nestor/client",
-    "openai": "^4.64.0",
-    "readline-sync": "^1.4.10"
+    "openai": "^4.64.0"
   },
   "devDependencies": {
     "tsx": "^4.19.1"
