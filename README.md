@@ -19,6 +19,16 @@ Service 2 exposes three mock APIs:
 - Get the unique ID of a song given a title and an artist
 - Add a song to a playlist (by providing both IDs)
 
+## Service 3
+
+Same as Service 1 but written in python. To run it:
+```
+python -m venv ./venv
+source ./venv/bin/activate
+pip install -r requirements.txt
+python main.py
+```
+
 ## Client
 
 The client is an OpenAI implementation of a chatbot: you need an OpenAI API key in order to be able to run it:
