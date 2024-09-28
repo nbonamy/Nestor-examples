@@ -13,7 +13,7 @@ const playlist = {
 
 // routes
 app.get('/list', (req, res) => {
-  res.json([
+  res.json({ endpoints: [
     {
       name: 'create_playlist',
       description: 'Create a playlist',
@@ -41,7 +41,7 @@ app.get('/list', (req, res) => {
         { name: 'artist', type: 'string', description: 'The artist of the song', required: true }
       ]
     }
-  ])
+  ]})
 })
 
 app.get('/playlist/create', (req, res) => {

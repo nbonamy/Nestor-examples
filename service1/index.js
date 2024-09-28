@@ -7,7 +7,7 @@ const app = express()
 
 // routes
 app.get('/list', (req, res) => {
-  res.json([
+  res.json({ endpoints: [
     {
       name: 'search_internet',
       description: 'Search the internet and returns list of url pages who matches. Only the url is returned not the content of the page',
@@ -24,7 +24,7 @@ app.get('/list', (req, res) => {
         { name: 'url', type: 'string', description: 'The url of the webpage', required: true }
       ]
     }
-  ])
+  ]})
 })
 
 app.get('/search', (req, res) => {
