@@ -5,26 +5,26 @@ from bottle import route, run
 from zeroconf import IPVersion, ServiceInfo, Zeroconf
 
 port = 0
-local_ip = ''
+local_ip = ""
 
 @route("/list")
 def list():
   global port, local_ip
-  return { 'endpoints': [
+  return { "endpoints": [
     {
-      'name': 'search_internet',
-      'description': 'Search the internet and returns list of url pages who matches. Only the url is returned not the content of the page',
-      'url': f'http://{local_ip}:{port}/search',
-      'parameters': [
-        { 'name': 'q', 'type': 'string', 'description': 'The query to search for', 'required': True }
+      "name": "search_internet",
+      "description": "Search the internet and returns list of url pages who matches. Only the url is returned not the content of the page",
+      "url": f"http://{local_ip}:{port}/search",
+      "parameters": [
+        { "name": "q", "type": "string", "description": "The query to search for", "required": True }
       ]
     },
     {
-      'name': 'fetch_content',
-      'description': 'Get the content of a webpage given its url',
-      'url': f'http://{local_ip}:{port}/content',
-      'parameters': [
-        { 'name': 'url', 'type': 'string', 'description': 'The url of the webpage', 'required': True }
+      "name": "fetch_content",
+      "description": "Get the content of a webpage given its url",
+      "url": f"http://{local_ip}:{port}/content",
+      "parameters": [
+        { "name": "url", "type": "string", "description": "The url of the webpage", "required": True }
       ]
     }
   ]}
@@ -52,9 +52,11 @@ def main() -> None:
     addresses=[socket.inet_aton(local_ip)],
     port=port,
     properties={
-      'type': 'service',
-      'path': '/list'
-    }
+      "type": "service",
+      "path": "/list"
+    },
+    host_ttl=10,
+    other_ttl=10,
   )
 
   zeroconf.register_service(info)
