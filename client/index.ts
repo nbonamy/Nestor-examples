@@ -10,6 +10,7 @@ setTimeout(async () => {
   const openai = new OpenAI()
 
   // prompt
+  //const user_input = 'Given the tools you have access to, what kind of tasks can you do for me? Come up with creative problems you can solve by combining the tools available to you. If you have no tools provided say you can\'t do much.'
   const user_input = 'Create a playlist of the songs played at The National concert in Chicago on 24 September 2024'
 
   // build messages
@@ -19,7 +20,7 @@ setTimeout(async () => {
   ]
 
   // log
-  console.log('** PROMPTING... ***')
+  console.log(`PROMPT: ${user_input}\n\nANSWER:`)
 
   // now iterate
   while (true) {
