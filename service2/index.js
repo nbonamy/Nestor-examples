@@ -15,6 +15,7 @@ const playlist = {
 app.get('/list', (req, res) => {
   res.json([
     {
+      name: 'create_playlist',
       description: 'Create a playlist',
       url: `${req.protocol}://${req.get('host')}/playlist/create`,
       parameters: [
@@ -23,6 +24,7 @@ app.get('/list', (req, res) => {
       ]
     },
     {
+      name: 'add_to_playlist',
       description: 'Add a song to a playlist',
       url: `${req.protocol}://${req.get('host')}/playlist/add`,
       parameters: [
@@ -31,6 +33,7 @@ app.get('/list', (req, res) => {
       ]
     },
     {
+      name: 'get_song_id',
       description: 'Get the id of a song given its title and artist',
       url: `${req.protocol}://${req.get('host')}/song/id`,
       parameters: [

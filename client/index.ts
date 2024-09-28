@@ -26,7 +26,7 @@ setTimeout(async () => {
 
     // build payload
     let payload: OpenAI.ChatCompletionCreateParams = {
-      model: 'gpt-4o-mini',
+      model: 'gpt-4o',
       messages: messages,
     }
 

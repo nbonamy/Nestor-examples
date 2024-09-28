@@ -9,6 +9,7 @@ const app = express()
 app.get('/list', (req, res) => {
   res.json([
     {
+      name: 'search_internet',
       description: 'Search the internet and returns list of url pages who matches. Only the url is returned not the content of the page',
       url: `${req.protocol}://${req.get('host')}/search`,
       parameters: [
@@ -16,6 +17,7 @@ app.get('/list', (req, res) => {
       ]
     },
     {
+      name: 'fetch_content',
       description: 'Get the content of a webpage given its url',
       url: `${req.protocol}://${req.get('host')}/content`,
       parameters: [
