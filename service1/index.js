@@ -49,8 +49,7 @@ portfinder.getPort({ port: 3000 }, (err, port) => {
     
     console.log(`Nestor Internet Service is listening at http://localhost:${port}`)
 
-    const nestorService = new NestorService('Nestor Internet Service Example', port, '/list')
-    nestorService.start()
+    new NestorService('Nestor Internet Service Example', port, '/list')
 
   })
 

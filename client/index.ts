@@ -61,7 +61,7 @@ setTimeout(async () => {
         name = name.replace(/^functions?/, '')
 
         // call the tool
-        console.log(`  - Calling tool...`)
+        console.log(`  - Calling tool ${name}...`)
         const response = await nestorClient.call(name, parameters)
         //console.log('-> Got', JSON.stringify(response))
 
