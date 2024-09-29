@@ -1,6 +1,6 @@
 
 import { OpenAI } from 'openai'
-import { NestorClient } from '@nestor/client'
+import { NestorClient } from 'nestor-client'
 
 const nestorClient = new NestorClient({ logger: null })
 

@@ -1,5 +1,5 @@
 
-const { NestorService } = require('@nestor/service')
+const { NestorService } = require('nestor-service')
 const portfinder = require('portfinder')
 const express = require('express')
 
