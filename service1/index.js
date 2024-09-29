@@ -31,7 +31,7 @@ app.get('/search', (req, res) => {
   console.log(req.path, req.query)
   res.json({
     results: [
-      'http://www.doesnotexist.com/butitmatches'
+      'http://www.setlist.com/national-chicago-20240924'
     ]
   })
 })

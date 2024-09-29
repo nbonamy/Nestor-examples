@@ -31,7 +31,7 @@ def list():
 
 @route("/search")
 def search():
-  return { "results": [ "http://www.doesnotexist.com/butitmatches" ] }
+  return { "results": [ "http://www.setlist.com/national-chicago-20240924" ] }
 
 @route("/content")
 def content():

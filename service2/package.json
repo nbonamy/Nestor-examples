@@ -9,7 +9,7 @@
   "license": "Apache-2.0",
   "description": "Nestor service example",
   "dependencies": {
-    "nestor-service": "^0.1.0",
+    "nestor-service": "^0.2.1",
     "express": "^4.21.0",
     "portfinder": "^1.0.32"
   }

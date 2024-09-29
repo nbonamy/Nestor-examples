@@ -10,7 +10,7 @@
   "license": "Apache-2.0",
   "description": "Nestor client example",
   "dependencies": {
-    "nestor-client": "^0.1.0",
+    "nestor-client": "^0.2.1",
     "openai": "^4.64.0"
   },
   "devDependencies": {
